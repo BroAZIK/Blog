@@ -1,17 +1,21 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/base.css">
     <title>BroAzik</title>
 </head>
 <body>
-    <header>
+    <header><h1>
         <a href="{%  url 'home' %}">Bosh sahifa</a>
         <a href="{% url 'about' %}">Saytimiz haqida</a>
         <a href="{% url 'news' %}">Yangiliklar</a>
         <a href="{% url 'blog' %}">Blog</a>
-    </header>
+
+    </h1></header>
 
 {% block content %}
 {% endblock content %}
