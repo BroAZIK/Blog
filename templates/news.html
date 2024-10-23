@@ -16,7 +16,7 @@
         {% for news in object_list %}
         <div class="news-item">
             <h2 class="news-title">{{ news.title }}</h2>
-            <p class="news-text">{{ news.text }}</p>
+            <p class="news-text">{{ news.text | slice:"10" }}</p>
         </div>
         {% endfor %}
     </div>
