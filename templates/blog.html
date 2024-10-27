@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="panel">
+    <h1>Bloglar</h1>
+    <a href="{% url 'post_new' %}" class="create-post-button">Yangi post yozish</a>
+</div>
+
 <div class="blog-container">
     {% for post in object_list %}
         <div class="post-entry">
