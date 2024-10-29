@@ -1,8 +1,9 @@
-/* Global Settings */
-* {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
 
@@ -18,10 +19,12 @@ body {
 .news-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+padding: 20px;
     background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
@@ -44,20 +47,16 @@ body {
     background-color: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-
-/* News Title */
 .news-title {
     font-size: 2rem;
     color: #ff6600;
     margin-bottom: 10px;
-    transition: color 0.3s ease;
+transition: color 0.3s ease;
 }
 
 .news-title:hover {
     color: #333;
 }
-
-/* News Text */
 .news-text {
     font-size: 1.1rem;
     color: #666;

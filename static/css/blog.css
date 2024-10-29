@@ -2,7 +2,7 @@
 
 .panel {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     max-width: 800px;
     margin: 40px auto;
@@ -10,6 +10,7 @@
     background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px; /* Yozuv va tugma orasidagi masofa */
 }
 
 .panel h1 {
@@ -19,7 +20,7 @@
 }
 
 .create-post-button {
-    padding: 10px 20px;
+    padding: 8px 16px; /* Kichikroq tugma uchun o'lchamlar */
     background-color: #007bff;
     color: #ffffff;
     text-decoration: none;
@@ -62,7 +63,6 @@
     text-overflow: ellipsis; /* Ortiqcha qismini ... bilan ko‘rsatadi */
 }
 
-
 .post-title a {
     text-decoration: none;
     color: inherit;
@@ -76,4 +76,5 @@
     font-size: 14px;
     color: #6c757d;
     margin-top: 8px;
+    text-align: center; /* Matnni markazlashtirish */
 }

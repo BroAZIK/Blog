@@ -21,9 +21,10 @@
     </h1></header>
     {% if user.is_authenticated %}
         <p>Xush kelibsiz, {{ user.username }}</p>
-        <a href="{% url 'logout' %}">Saytdan Log Out</a>
+        <a href="{% url 'logout' %}">Saytdan chiqish</a>
     {% else %}
-        <a href="{% url 'login' %}">Saytga Log In</a>
+        <a href="{% url 'login' %}">Saytga kirish</a>
+        <a href="{% url 'signup' %}">Ro'yxatdan o'tish</a>
     {% endif %}
 {% block content %}
 {% endblock content %}
