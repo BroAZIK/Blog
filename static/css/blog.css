@@ -1,67 +1,79 @@
-/* Global Settings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
+/* blog_list.css */
 
-/* Body */
-body {
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
+.panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 40px auto;
     padding: 20px;
-}
-
-/* Post Entry Container */
-.post-entry {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
+    background-color: #f8f9fa;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel h1 {
+    font-size: 24px;
+    color: #343a40;
+    margin: 0;
+}
+
+.create-post-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.create-post-button:hover {
+    background-color: #0056b3;
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-entry {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .post-entry:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Post Title */
-.post-entry h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
-    transition: color 0.3s ease;
+.post-title {
+    font-size: 18px;
+    color: #007bff;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap; /* Bitta qatorda ko‘rsatadi */
+    overflow: hidden; /* Qiyshaygan joylarni yashiradi */
+    text-overflow: ellipsis; /* Ortiqcha qismini ... bilan ko‘rsatadi */
 }
 
-.post-entry h2 a {
+
+.post-title a {
     text-decoration: none;
     color: inherit;
 }
 
-.post-entry h2 a:hover {
-    color: #ff6600;
+.post-title a:hover {
+    text-decoration: underline;
 }
 
-/* Post Body */
-.post-entry p {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.8;
-    margin-bottom: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .post-entry h2 {
-        font-size: 1.6rem;
-    }
-
-    .post-entry p {
-        font-size: 1rem;
-    }
+.post-body {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 8px;
 }

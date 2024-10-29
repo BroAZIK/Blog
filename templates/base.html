@@ -19,7 +19,12 @@
         <a href="{% url 'blog' %}">Blog</a>
 
     </h1></header>
-
+    {% if user.is_authenticated %}
+        <p>Xush kelibsiz, {{ user.username }}</p>
+        <a href="{% url 'logout' %}">Saytdan Log Out</a>
+    {% else %}
+        <a href="{% url 'login' %}">Saytga Log In</a>
+    {% endif %}
 {% block content %}
 {% endblock content %}
 </body>
